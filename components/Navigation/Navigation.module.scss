@@ -1,0 +1,12 @@
+.navigation {
+    margin-top: 10px;
+    margin-left: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+.link {
+    &:hover {
+        opacity: 0.5;
+    }
+}
