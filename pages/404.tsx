@@ -6,7 +6,7 @@ const Error404 = () => {
             <Head>
                 <title>Error</title>
             </Head>
-            <h1>404</h1>
+            <h1>Oops! There is nothing here.</h1>
         </>
     )
 }
