@@ -33,6 +33,6 @@ export const Users: FC<Props> = ({ users }) => {
 }
 
 
-type Props = {
+interface Props {
     users: TUser[]
 }

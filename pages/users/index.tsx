@@ -24,6 +24,6 @@ export const getStaticProps: GetStaticProps = async () => {
 export default UsersPage
 
 
-type Props = {
+interface Props {
     users: TUser[]
 }

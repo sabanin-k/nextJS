@@ -26,6 +26,6 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 export default Userpage
 
 
-type Props = {
+interface Props {
     user: TUser
 }

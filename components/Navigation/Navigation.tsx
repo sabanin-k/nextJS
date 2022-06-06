@@ -22,6 +22,6 @@ export const Navigation: FC<Props> = ({ children }) => {
 }
 
 
-type Props = {
+interface Props {
     children: ReactNode
 }
