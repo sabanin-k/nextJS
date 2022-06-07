@@ -1,8 +1,8 @@
 import axios from 'axios'
+import { FC } from 'react'
 import { GetServerSideProps } from 'next'
-import React, { FC, useEffect } from 'react'
 import { useAppDispatch, useAppSelector } from '../store/hooks'
-import { getPosts2, selectPosts } from '../store/reducers/posts'
+import { getPosts, selectPosts } from '../store/reducers/posts'
 import { TPost } from '../types'
 
 const Posts: FC<Props> = ({ posts }) => {
@@ -11,7 +11,7 @@ const Posts: FC<Props> = ({ posts }) => {
 
     return (
         <>
-            <button onClick={() => dispatch(getPosts2())}>Get Posts</button>
+            <button onClick={() => dispatch(getPosts())}>Get Posts</button>
             {posts
                 ? posts.slice(0, 10).map(post => {
                     return (

@@ -1,6 +1,6 @@
-import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
-import { AppDispatch, AppThunk, RootState } from "..";
+import { AppDispatch, RootState } from "..";
 import { TPost } from "../../types";
 
 const postsSlice = createSlice({
@@ -25,7 +25,7 @@ const postsSlice = createSlice({
     }
 })
 
-export const getPosts2 = () => async (dispatch: AppDispatch) => {
+export const getPosts = () => async (dispatch: AppDispatch) => {
     try {
         dispatch(postsSlice.actions.setFetching())
         const res = await axios.get<TPost[]>('https://jsonplaceholder.typicode.com/posts')
